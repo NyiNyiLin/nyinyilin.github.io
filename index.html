@@ -1,12 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nyi Nyi Lin Runfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nyi Nyi Lin's personal running record — races, times, and the miles that made them memorable.">
+  <meta name="theme-color" content="#161914">
+  <title>Nyi Nyi Lin — Running Record</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-    <h1>Hello, I'm Nyi Nyi Lin</h1>
-    <p>My GitHub Pages Runfolio website is working.</p>
+  <a class="skip-link" href="#summary">Skip to running record</a>
+  <header class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-gallery" aria-hidden="true">
+      <div class="hero-panel hero-panel--one"></div>
+      <div class="hero-panel hero-panel--two"></div>
+      <div class="hero-panel hero-panel--three"></div>
+      <div class="hero-panel hero-panel--four"></div>
+      <div class="hero-panel hero-panel--five"></div>
+    </div>
+    <div class="hero-shade"></div>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="wordmark" href="#top" aria-label="Nyi Nyi Lin, back to top">NNL<span class="wordmark-dot">.</span></a>
+      <div class="nav-links">
+        <a href="#summary">Record</a>
+        <a href="#timeline">Races</a>
+      </div>
+    </nav>
+    <div class="hero-copy">
+      <p class="eyebrow">Miles &amp; moments · Est. 2025</p>
+      <h1 id="hero-title">Nyi Nyi<br>Lin<span class="accent-dot">.</span></h1>
+      <p class="hero-intro">Every finish line becomes<br>a new starting point.</p>
+    </div>
+    <a class="scroll-cue" href="#summary">
+      <span>Explore my runs</span>
+      <span class="scroll-line" aria-hidden="true"></span>
+    </a>
+    <p class="hero-count" aria-hidden="true"><span>05</span> races</p>
+  </header>
+
+  <main>
+    <section class="summary section" id="summary" aria-labelledby="summary-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">The running record</p>
+        <h2 id="summary-title">So far,<br>one stride at a time.</h2>
+      </div>
+      <div class="stats" aria-label="Running totals">
+        <article class="stat reveal">
+          <p class="stat-value"><span data-count="72.2">0</span><small>km</small></p>
+          <p class="stat-label">Total race distance</p>
+          <span class="stat-index">01</span>
+        </article>
+        <article class="stat reveal">
+          <p class="stat-value"><span data-count="5">0</span><small>events</small></p>
+          <p class="stat-label">Finish lines crossed</p>
+          <span class="stat-index">02</span>
+        </article>
+      </div>
+      <p class="summary-note reveal">From a first 10K to two half marathons — a record of showing up, finding rhythm, and moving forward.</p>
+    </section>
+
+    <section class="timeline-section section" id="timeline" aria-labelledby="timeline-title">
+      <div class="timeline-heading reveal">
+        <p class="section-kicker">2025 — 2026</p>
+        <h2 id="timeline-title">Race<br>timeline.</h2>
+        <p>Five starts. Five finishes. Tap any race to see the full result.</p>
+      </div>
+      <div class="timeline">
+        <article class="race-card reveal">
+          <button class="race-toggle" type="button" aria-expanded="false" aria-controls="race-heal">
+            <span class="race-date"><strong>16</strong> Feb 2025</span>
+            <span class="race-title"><span class="race-number">01</span>Race to Heal</span>
+            <span class="race-distance">10<small>km</small></span>
+            <span class="race-action" aria-hidden="true">+</span>
+          </button>
+          <div class="race-details" id="race-heal" hidden>
+            <div class="result"><span>Finish time</span><strong>1:10:00</strong></div>
+            <div class="result"><span>Average pace</span><strong>7:00 / km</strong></div>
+            <p class="detail-note">Race photos and location coming soon.</p>
+          </div>
+        </article>
+        <article class="race-card reveal">
+          <button class="race-toggle" type="button" aria-expanded="false" aria-controls="race-park">
+            <span class="race-date"><strong>04</strong> May 2025</span>
+            <span class="race-title"><span class="race-number">02</span>Bangkok Park Run</span>
+            <span class="race-distance">21.1<small>km</small></span>
+            <span class="race-action" aria-hidden="true">+</span>
+          </button>
+          <div class="race-details" id="race-park" hidden>
+            <div class="result"><span>Finish time</span><strong>2:36:00</strong></div>
+            <div class="result"><span>Average pace</span><strong>7:24 / km</strong></div>
+            <p class="detail-note">Race photos and location coming soon.</p>
+          </div>
+        </article>
+        <article class="race-card reveal">
+          <button class="race-toggle" type="button" aria-expanded="false" aria-controls="race-lazada">
+            <span class="race-date"><strong>26</strong> Oct 2025</span>
+            <span class="race-title"><span class="race-number">03</span>Lazada Run</span>
+            <span class="race-distance">10<small>km</small></span>
+            <span class="race-action" aria-hidden="true">+</span>
+          </button>
+          <div class="race-details" id="race-lazada" hidden>
+            <div class="result"><span>Finish time</span><strong>1:14:00</strong></div>
+            <div class="result"><span>Average pace</span><strong>7:00 / km</strong></div>
+            <p class="detail-note">Race photos and location coming soon.</p>
+          </div>
+        </article>
+        <article class="race-card reveal">
+          <button class="race-toggle" type="button" aria-expanded="false" aria-controls="race-thailand">
+            <span class="race-date"><strong>30</strong> Nov 2025</span>
+            <span class="race-title"><span class="race-number">04</span>Amazing Thailand Marathon</span>
+            <span class="race-distance">21.1<small>km</small></span>
+            <span class="race-action" aria-hidden="true">+</span>
+          </button>
+          <div class="race-details" id="race-thailand" hidden>
+            <div class="result"><span>Finish time</span><strong>2:45:00</strong></div>
+            <div class="result"><span>Average pace</span><strong>7:49 / km</strong></div>
+            <p class="detail-note">Race photos and location coming soon.</p>
+          </div>
+        </article>
+        <article class="race-card reveal">
+          <button class="race-toggle" type="button" aria-expanded="false" aria-controls="race-nurses">
+            <span class="race-date"><strong>19</strong> Jul 2026</span>
+            <span class="race-title"><span class="race-number">05</span>Run for Nurses</span>
+            <span class="race-distance">10<small>km</small></span>
+            <span class="race-action" aria-hidden="true">+</span>
+          </button>
+          <div class="race-details" id="race-nurses" hidden>
+            <div class="result"><span>Finish time</span><strong>1:07:00</strong></div>
+            <div class="result"><span>Average pace</span><strong>6:50 / km</strong></div>
+            <p class="detail-note">Race photos and location coming soon.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="#top">NNL<span class="wordmark-dot">.</span></a>
+    <p>Keep moving forward.</p>
+    <p>© <span id="year">2026</span> Nyi Nyi Lin</p>
+  </footer>
 </body>
 </html>
