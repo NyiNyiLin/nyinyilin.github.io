@@ -143,6 +143,20 @@ button { font:inherit; }
 .motion-caption span { color:var(--accent); font-size:.6rem; }
 .motion-caption h3 { margin:0; font-family:"Manrope",sans-serif; font-size:clamp(.9rem,1.3vw,1.1rem); font-weight:500; }
 .motion-caption p { flex:none; margin:.15rem 0 0; color:#777a72; font-size:.62rem; letter-spacing:.06em; text-transform:uppercase; }
+.strava-section { position:relative; display:grid; grid-template-columns:1fr minmax(18rem,.72fr); gap:clamp(3rem,10vw,11rem); align-items:center; overflow:hidden; color:#fff; background:#fc4c02; }
+.strava-copy { position:relative; z-index:1; }
+.strava-kicker { margin:0 0 1.5rem; font-size:.68rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase; }
+.strava-copy h2 { margin:0; font-family:"Manrope",sans-serif; font-size:clamp(3.7rem,8vw,8.2rem); font-weight:500; letter-spacing:-.075em; line-height:.88; }
+.strava-copy h2 span { color:var(--ink); }
+.strava-copy>p:not(.strava-kicker) { max-width:30rem; margin:2rem 0 2.5rem; color:rgba(255,255,255,.82); font-size:clamp(.92rem,1.25vw,1.08rem); line-height:1.7; }
+.strava-button { display:inline-flex; align-items:center; justify-content:space-between; gap:2.5rem; min-width:min(100%,17rem); padding:1.1rem 1.25rem; color:var(--ink); background:#fff; font-size:.68rem; font-weight:600; letter-spacing:.11em; text-decoration:none; text-transform:uppercase; }
+.strava-button span { font-size:1rem; transition:transform 180ms ease; }
+.strava-button:hover span,.strava-button:focus-visible span { transform:translate(.18rem,-.18rem); }
+.strava-button:focus-visible,.strava-qr:focus-visible { outline:2px solid var(--ink); outline-offset:5px; }
+.strava-qr { position:relative; z-index:1; justify-self:end; display:block; width:min(100%,27rem); padding:clamp(.75rem,1.5vw,1.25rem); color:var(--ink); background:#fff; text-decoration:none; box-shadow:1.5rem 1.5rem 0 rgba(22,25,20,.16); }
+.strava-qr img { display:block; width:100%; height:auto; }
+.strava-qr>span { display:block; padding:.9rem .25rem .15rem; font-size:.64rem; font-weight:600; letter-spacing:.14em; text-align:center; text-transform:uppercase; }
+.strava-word { position:absolute; right:-.04em; bottom:-.23em; margin:0; color:rgba(255,255,255,.1); font-family:"Manrope",sans-serif; font-size:clamp(7rem,20vw,20rem); font-weight:700; letter-spacing:-.09em; line-height:1; }
 .site-footer { display:flex; align-items:center; justify-content:space-between; padding:2rem var(--page-pad); color:var(--paper); background:var(--ink); border-top:1px solid rgba(242,240,233,.14); }
 .site-footer p { margin:0; color:#777a72; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; }
 .reveal { opacity:0; transform:translateY(1.5rem); transition:opacity 650ms ease,transform 650ms cubic-bezier(.2,.7,.2,1); }
@@ -156,7 +170,7 @@ button { font:inherit; }
   .hero h1 { font-size:clamp(4.6rem,24vw,7.2rem); line-height:.78; }
   .hero-intro { font-size:.78rem; }
   .hero-count { display:none; }
-  .summary,.medal-section,.timeline-section,.goals-section,.motion-section { grid-template-columns:1fr; }
+  .summary,.medal-section,.timeline-section,.goals-section,.motion-section,.strava-section { grid-template-columns:1fr; }
   .summary { gap:3.75rem; }
   .stat { min-height:13rem; padding-top:1.5rem; }
   .summary-note { grid-column:1; margin-top:-1.5rem; }
@@ -174,6 +188,7 @@ button { font:inherit; }
   .goal-card { min-height:30rem; }
   .moments-heading { align-items:flex-start; flex-direction:column; }
   .motion-heading { position:static; }
+  .strava-qr { justify-self:start; width:min(78vw,24rem); }
   .site-footer p:nth-of-type(1) { display:none; }
 }
 
