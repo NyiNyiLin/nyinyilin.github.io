@@ -4,4 +4,4 @@ Place the five full-screen landing images in `hero/` and event-specific photos i
 
 Recommended hero filenames: `hero-01.webp` through `hero-05.webp`.
 
-The page currently displays gradient placeholders. When the photos are ready, connect them to the five `.hero-panel` rules in `assets/css/styles.css` using `--photo: url("../images/hero/hero-01.webp");` and the corresponding filename for each panel.
+The five optimized hero photographs are stored as `hero-01.webp` through `hero-05.webp` and connected to the matching `.hero-panel` rules in `assets/css/styles.css`. Keep these filenames to replace a photograph without changing the page code.
