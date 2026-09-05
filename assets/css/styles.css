@@ -12,12 +12,9 @@ button { font:inherit; }
 .hero-gallery { position:absolute; inset:0; display:grid; grid-template-columns:repeat(5,1fr); }
 .hero-panel { position:relative; min-width:0; background-color:#4a5045; background-image:var(--photo,none),var(--fallback); background-position:center; background-size:cover; border-right:1px solid rgba(255,255,255,.14); filter:saturate(.72); transform:scale(1.035); animation:settle 1.6s cubic-bezier(.2,.7,.2,1) forwards; }
 .hero-panel::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(10,12,9,.04),rgba(10,12,9,.3)); }
-.hero-panel--one { --fallback:linear-gradient(150deg,#72806b 0%,#30362f 45%,#c3885f 100%); }
-.hero-panel--two { --fallback:linear-gradient(155deg,#384d50 0%,#838d7d 55%,#302f2a 100%); animation-delay:.08s; }
-.hero-panel--three { --fallback:linear-gradient(145deg,#a27859 0%,#443d34 48%,#202821 100%); animation-delay:.16s; }
-.hero-panel--four { --fallback:linear-gradient(155deg,#596b5f 0%,#252b27 55%,#9c745f 100%); animation-delay:.24s; }
-.hero-panel--five { --fallback:linear-gradient(145deg,#354043 0%,#7c8371 48%,#332e27 100%); animation-delay:.32s; }
+.hero-panel--background { grid-column:1/-1; --photo:url("../images/hero/hero-background.webp"); --fallback:linear-gradient(155deg,#384d50 0%,#838d7d 55%,#302f2a 100%); background-position:72% center; filter:saturate(.82); }
 .hero-shade { position:absolute; inset:0; background:linear-gradient(90deg,rgba(10,12,9,.46),rgba(10,12,9,.12) 50%,rgba(10,12,9,.34)),linear-gradient(180deg,rgba(10,12,9,.28),transparent 30%,rgba(10,12,9,.48)); }
+.hero--photo .hero-shade { background:linear-gradient(90deg,rgba(10,12,9,.38),rgba(10,12,9,.48) 50%,rgba(10,12,9,.3)),linear-gradient(180deg,rgba(10,12,9,.2),transparent 32%,rgba(10,12,9,.5)); }
 .site-nav { position:absolute; z-index:2; inset:0 0 auto; display:flex; align-items:center; justify-content:space-between; padding:1.5rem var(--page-pad); }
 .wordmark { font-family:"Manrope",sans-serif; font-size:1.1rem; font-weight:700; letter-spacing:-.04em; text-decoration:none; }
 .wordmark-dot,.accent-dot { color:var(--accent); }
@@ -124,6 +121,7 @@ button { font:inherit; }
 
 @media (max-width:760px) {
   .hero-gallery { grid-template-columns:repeat(5,minmax(0,1fr)); }
+  .hero-panel--background { background-position:100% center; }
   .hero h1 { font-size:clamp(4.6rem,24vw,7.2rem); line-height:.78; }
   .hero-intro { font-size:.78rem; }
   .hero-count { display:none; }
