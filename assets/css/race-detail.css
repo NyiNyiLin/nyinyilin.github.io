@@ -16,6 +16,16 @@
   --race-green-light:#ed1e72;
   --race-purple:#ffd524;
 }
+.race-page--atm {
+  --race-green:#20211f;
+  --race-green-light:#aa9668;
+  --race-purple:#d7ff28;
+}
+.race-page--nurses {
+  --race-green:#006fca;
+  --race-green-light:#ff6b24;
+  --race-purple:#ffe51b;
+}
 .race-nav { position:absolute; z-index:3; top:0; left:0; display:flex; align-items:center; justify-content:space-between; width:100%; padding:1.5rem var(--page-pad); color:#fff; }
 .back-link { display:flex; align-items:center; gap:.65rem; font-size:.68rem; font-weight:600; letter-spacing:.12em; text-decoration:none; text-transform:uppercase; }
 .back-link span { color:#d8b8d5; font-size:1rem; transition:transform 180ms ease; }
@@ -27,6 +37,7 @@
 .race-hero-copy,.hero-distance { position:relative; z-index:1; }
 .race-eyebrow { margin:0 0 2rem; color:#d8b8d5; font-size:.68rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase; }
 .race-hero h1 { margin:0; font-family:"Manrope",sans-serif; font-size:clamp(5rem,13vw,12rem); font-weight:500; letter-spacing:-.08em; line-height:.75; }
+.race-hero .race-title--long { font-size:clamp(4rem,8.7vw,8.7rem); line-height:.82; }
 .race-hero h1 span { color:#d8b8d5; }
 .race-meta { display:flex; gap:clamp(2rem,6vw,6rem); margin-top:clamp(3rem,7vw,6rem); }
 .race-meta p { margin:0; font-size:.82rem; line-height:1.5; }
@@ -36,7 +47,9 @@
 .hero-distance span { margin-bottom:.5rem; color:#d8b8d5; font-size:.78rem; font-weight:600; letter-spacing:.17em; }
 .race-page--park .hero-distance span,.race-page--park .race-eyebrow,.race-page--park .back-link span,.race-page--park .proof-grid figcaption span,
 .race-page--lazada .hero-distance span,.race-page--lazada .race-eyebrow,.race-page--lazada .back-link span,.race-page--lazada .proof-grid figcaption span,
-.race-page--park .race-hero h1 span,.race-page--lazada .race-hero h1 span { color:var(--race-purple); }
+.race-page--atm .hero-distance span,.race-page--atm .race-eyebrow,.race-page--atm .back-link span,.race-page--atm .proof-grid figcaption span,
+.race-page--nurses .hero-distance span,.race-page--nurses .race-eyebrow,.race-page--nurses .back-link span,.race-page--nurses .proof-grid figcaption span,
+.race-page--park .race-hero h1 span,.race-page--lazada .race-hero h1 span,.race-page--atm .race-hero h1 span,.race-page--nurses .race-hero h1 span { color:var(--race-purple); }
 .hero-distance--decimal strong { font-size:clamp(6.5rem,15vw,14rem); }
 .hero-mark { position:absolute; top:13%; right:var(--page-pad); margin:0; color:rgba(255,255,255,.12); font-family:"Manrope",sans-serif; font-size:clamp(5rem,10vw,9rem); letter-spacing:-.08em; }
 
@@ -84,6 +97,7 @@
 .medal-story-image { position:relative; overflow:hidden; aspect-ratio:1.15; background:#c7c8bd; }
 .medal-story-image::after { content:""; position:absolute; inset:0; background:linear-gradient(135deg,transparent 45%,rgba(36,90,53,.16)); }
 .medal-story-image img { display:block; width:100%; height:100%; object-fit:cover; }
+.medal-story-image--portrait,.kit-story-image--portrait { aspect-ratio:3/4; }
 .medal-story-copy p:not(.detail-kicker) { max-width:27rem; margin:2rem 0 4rem; color:var(--muted); font-size:clamp(.95rem,1.4vw,1.15rem); line-height:1.7; }
 .medal-story-copy>span { color:var(--race-green); font-size:.65rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase; }
 .medal-story-copy .detail-kicker { margin-bottom:1.5rem; }
@@ -128,6 +142,7 @@
   .race-hero { gap:2rem; }
   .race-hero::before { top:4rem; right:-45vw; width:95vw; border-width:3rem; }
   .race-hero h1 { font-size:clamp(4.7rem,24vw,7rem); }
+  .race-hero .race-title--long { font-size:clamp(3.6rem,17vw,5.8rem); }
   .race-meta { flex-direction:column; gap:1.25rem; margin-top:2.75rem; }
   .hero-distance strong { font-size:8rem; }
   .hero-mark { display:none; }
