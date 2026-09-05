@@ -11,6 +11,11 @@
   --race-green-light:#129eca;
   --race-purple:#d7ff28;
 }
+.race-page--lazada {
+  --race-green:#123f78;
+  --race-green-light:#ed1e72;
+  --race-purple:#ffd524;
+}
 .race-nav { position:absolute; z-index:3; top:0; left:0; display:flex; align-items:center; justify-content:space-between; width:100%; padding:1.5rem var(--page-pad); color:#fff; }
 .back-link { display:flex; align-items:center; gap:.65rem; font-size:.68rem; font-weight:600; letter-spacing:.12em; text-decoration:none; text-transform:uppercase; }
 .back-link span { color:#d8b8d5; font-size:1rem; transition:transform 180ms ease; }
@@ -29,7 +34,9 @@
 .hero-distance { display:flex; align-items:flex-end; gap:.8rem; margin:0 3vw 0 0; }
 .hero-distance strong { font-family:"Manrope",sans-serif; font-size:clamp(8rem,19vw,18rem); font-weight:500; letter-spacing:-.11em; line-height:.7; }
 .hero-distance span { margin-bottom:.5rem; color:#d8b8d5; font-size:.78rem; font-weight:600; letter-spacing:.17em; }
-.race-page--park .hero-distance span,.race-page--park .race-eyebrow,.race-page--park .back-link span,.race-page--park .proof-grid figcaption span { color:var(--race-purple); }
+.race-page--park .hero-distance span,.race-page--park .race-eyebrow,.race-page--park .back-link span,.race-page--park .proof-grid figcaption span,
+.race-page--lazada .hero-distance span,.race-page--lazada .race-eyebrow,.race-page--lazada .back-link span,.race-page--lazada .proof-grid figcaption span,
+.race-page--park .race-hero h1 span,.race-page--lazada .race-hero h1 span { color:var(--race-purple); }
 .hero-distance--decimal strong { font-size:clamp(6.5rem,15vw,14rem); }
 .hero-mark { position:absolute; top:13%; right:var(--page-pad); margin:0; color:rgba(255,255,255,.12); font-family:"Manrope",sans-serif; font-size:clamp(5rem,10vw,9rem); letter-spacing:-.08em; }
 
@@ -80,6 +87,11 @@
 .medal-story-copy p:not(.detail-kicker) { max-width:27rem; margin:2rem 0 4rem; color:var(--muted); font-size:clamp(.95rem,1.4vw,1.15rem); line-height:1.7; }
 .medal-story-copy>span { color:var(--race-green); font-size:.65rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase; }
 .medal-story-copy .detail-kicker { margin-bottom:1.5rem; }
+.kit-story { background:var(--race-cream); }
+.kit-story .medal-story-copy { order:0; }
+.kit-story .medal-story-image { order:1; }
+.kit-story .medal-story-copy a { color:var(--race-green); font-size:.68rem; font-weight:600; letter-spacing:.1em; text-decoration:none; text-transform:uppercase; border-bottom:1px solid currentColor; }
+.kit-story-image { aspect-ratio:1.12; }
 
 .course-section { display:grid; grid-template-columns:.65fr 1.35fr; gap:clamp(3rem,8vw,9rem); align-items:start; }
 .course-copy { position:sticky; top:3rem; }
