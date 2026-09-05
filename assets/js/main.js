@@ -42,7 +42,7 @@ if ('IntersectionObserver' in window && !reducedMotion) {
   counters.forEach((counter) => { counter.textContent = counter.dataset.count; });
 }
 
-document.querySelectorAll('.race-toggle').forEach((button) => {
+document.querySelectorAll('.race-toggle[aria-controls]').forEach((button) => {
   button.addEventListener('click', () => {
     const details = document.getElementById(button.getAttribute('aria-controls'));
     const isOpen = button.getAttribute('aria-expanded') === 'true';

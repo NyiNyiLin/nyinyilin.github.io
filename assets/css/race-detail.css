@@ -1,0 +1,140 @@
+:root {
+  --race-green: #245a35;
+  --race-green-light: #4f9c5c;
+  --race-purple: #a477a2;
+  --race-cream: #f4f1e8;
+}
+
+.race-page { background:var(--race-cream); }
+.race-page--park {
+  --race-green:#0b397f;
+  --race-green-light:#129eca;
+  --race-purple:#d7ff28;
+}
+.race-nav { position:absolute; z-index:3; top:0; left:0; display:flex; align-items:center; justify-content:space-between; width:100%; padding:1.5rem var(--page-pad); color:#fff; }
+.back-link { display:flex; align-items:center; gap:.65rem; font-size:.68rem; font-weight:600; letter-spacing:.12em; text-decoration:none; text-transform:uppercase; }
+.back-link span { color:#d8b8d5; font-size:1rem; transition:transform 180ms ease; }
+.back-link:hover span,.back-link:focus-visible span { transform:translateX(-.25rem); }
+
+.race-hero { position:relative; display:flex; align-items:flex-end; justify-content:space-between; gap:3rem; min-height:100svh; padding:clamp(8rem,14vw,12rem) var(--page-pad) clamp(3rem,6vw,5rem); overflow:hidden; color:#fff; background:var(--race-green); }
+.race-hero::before { content:""; position:absolute; top:-18vw; right:-13vw; width:min(62vw,56rem); aspect-ratio:1; border:clamp(2.5rem,6vw,6rem) solid var(--race-purple); border-radius:50%; opacity:.88; }
+.race-hero::after { content:""; position:absolute; right:7vw; bottom:-21vw; width:min(48vw,42rem); aspect-ratio:1; border:1px solid rgba(255,255,255,.27); border-radius:50%; box-shadow:0 0 0 2.5rem rgba(255,255,255,.035),0 0 0 5rem rgba(255,255,255,.035); }
+.race-hero-copy,.hero-distance { position:relative; z-index:1; }
+.race-eyebrow { margin:0 0 2rem; color:#d8b8d5; font-size:.68rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase; }
+.race-hero h1 { margin:0; font-family:"Manrope",sans-serif; font-size:clamp(5rem,13vw,12rem); font-weight:500; letter-spacing:-.08em; line-height:.75; }
+.race-hero h1 span { color:#d8b8d5; }
+.race-meta { display:flex; gap:clamp(2rem,6vw,6rem); margin-top:clamp(3rem,7vw,6rem); }
+.race-meta p { margin:0; font-size:.82rem; line-height:1.5; }
+.race-meta span { display:block; margin-bottom:.45rem; color:rgba(255,255,255,.55); font-size:.6rem; letter-spacing:.14em; text-transform:uppercase; }
+.hero-distance { display:flex; align-items:flex-end; gap:.8rem; margin:0 3vw 0 0; }
+.hero-distance strong { font-family:"Manrope",sans-serif; font-size:clamp(8rem,19vw,18rem); font-weight:500; letter-spacing:-.11em; line-height:.7; }
+.hero-distance span { margin-bottom:.5rem; color:#d8b8d5; font-size:.78rem; font-weight:600; letter-spacing:.17em; }
+.race-page--park .hero-distance span,.race-page--park .race-eyebrow,.race-page--park .back-link span,.race-page--park .proof-grid figcaption span { color:var(--race-purple); }
+.hero-distance--decimal strong { font-size:clamp(6.5rem,15vw,14rem); }
+.hero-mark { position:absolute; top:13%; right:var(--page-pad); margin:0; color:rgba(255,255,255,.12); font-family:"Manrope",sans-serif; font-size:clamp(5rem,10vw,9rem); letter-spacing:-.08em; }
+
+.detail-section { padding:clamp(5.5rem,11vw,10rem) var(--page-pad); }
+.detail-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:2rem; margin-bottom:clamp(3rem,7vw,6rem); }
+.detail-heading h2,.medal-story-copy h2,.course-copy h2 { margin:0; font-family:"Manrope",sans-serif; font-size:clamp(3.5rem,7.5vw,7.5rem); font-weight:500; letter-spacing:-.07em; line-height:.9; }
+.detail-kicker { align-self:flex-start; margin:0; color:var(--race-green-light); font-size:.66rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase; }
+.record-section { background:var(--race-cream); }
+.result-grid { display:grid; grid-template-columns:1.4fr repeat(3,1fr); border-top:1px solid var(--line); border-left:1px solid var(--line); }
+.result-stat { position:relative; display:flex; flex-direction:column; min-height:17rem; padding:1.5rem; border-right:1px solid var(--line); border-bottom:1px solid var(--line); }
+.result-stat span { color:var(--muted); font-size:.64rem; letter-spacing:.13em; text-transform:uppercase; }
+.result-stat strong { margin:auto 0 .55rem; font-family:"Manrope",sans-serif; font-size:clamp(3rem,5.8vw,6rem); font-weight:500; letter-spacing:-.08em; line-height:.86; }
+.result-stat small { color:var(--muted); font-size:.7rem; letter-spacing:.06em; text-transform:uppercase; }
+.result-stat--primary { color:#fff; background:var(--race-green); }
+.result-stat--primary span,.result-stat--primary small { color:rgba(255,255,255,.64); }
+
+.race-facts { color:#fff; background:#171a16; }
+.race-facts .detail-heading h2 { color:var(--race-cream); }
+.facts-list { display:grid; grid-template-columns:1fr 1fr .8fr; border-top:1px solid rgba(255,255,255,.18); }
+.fact-card { display:flex; flex-direction:column; min-height:28rem; padding:2rem clamp(1.25rem,3vw,3rem); border-right:1px solid rgba(255,255,255,.18); }
+.fact-card:last-child { border-right:0; }
+.fact-card>span { color:#858a81; font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; }
+.fact-card h3 { margin:auto 0 2rem; font-family:"Manrope",sans-serif; font-size:clamp(1.65rem,3vw,3.2rem); font-weight:500; letter-spacing:-.055em; line-height:1.06; }
+.fact-card a { width:max-content; color:#d8b8d5; font-size:.68rem; font-weight:600; letter-spacing:.09em; text-decoration:none; text-transform:uppercase; border-bottom:1px solid currentColor; }
+.fact-card p { margin:0; color:#858a81; font-size:.75rem; }
+.fact-card dl { margin:auto 0 0; }
+.fact-card dl div { display:flex; justify-content:space-between; gap:1rem; padding:1.1rem 0; border-bottom:1px solid rgba(255,255,255,.14); }
+.fact-card dt { color:#858a81; font-size:.68rem; text-transform:uppercase; }
+.fact-card dd { margin:0; font-family:"Manrope",sans-serif; font-size:1rem; }
+
+.proof-section { color:var(--race-cream); background:var(--race-green); }
+.detail-heading--light { display:grid; grid-template-columns:.55fr 1fr; }
+.detail-heading--light .detail-kicker { color:#d8b8d5; }
+.detail-heading--light h2 { color:#fff; }
+.detail-heading--light>p:last-child { grid-column:2; max-width:28rem; margin:1rem 0 0; color:rgba(255,255,255,.6); font-size:.9rem; line-height:1.6; }
+.proof-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:clamp(1rem,3vw,3rem); align-items:start; }
+.proof-grid figure { margin:0; }
+.proof-grid figure:nth-child(2) { margin-top:clamp(3rem,8vw,8rem); }
+.proof-grid--single { grid-template-columns:minmax(0,44rem); justify-content:center; }
+.proof-grid img { display:block; width:100%; height:auto; background:#fff; }
+.proof-grid figcaption,.course-map figcaption { display:flex; gap:.75rem; padding-top:1rem; color:rgba(255,255,255,.72); font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; }
+.proof-grid figcaption span { color:#d8b8d5; }
+
+.medal-story { display:grid; grid-template-columns:1.15fr .85fr; gap:clamp(3rem,9vw,10rem); align-items:center; background:#ddd9cf; }
+.medal-story-image { position:relative; overflow:hidden; aspect-ratio:1.15; background:#c7c8bd; }
+.medal-story-image::after { content:""; position:absolute; inset:0; background:linear-gradient(135deg,transparent 45%,rgba(36,90,53,.16)); }
+.medal-story-image img { display:block; width:100%; height:100%; object-fit:cover; }
+.medal-story-copy p:not(.detail-kicker) { max-width:27rem; margin:2rem 0 4rem; color:var(--muted); font-size:clamp(.95rem,1.4vw,1.15rem); line-height:1.7; }
+.medal-story-copy>span { color:var(--race-green); font-size:.65rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase; }
+.medal-story-copy .detail-kicker { margin-bottom:1.5rem; }
+
+.course-section { display:grid; grid-template-columns:.65fr 1.35fr; gap:clamp(3rem,8vw,9rem); align-items:start; }
+.course-copy { position:sticky; top:3rem; }
+.course-copy .detail-kicker { margin-bottom:1.5rem; }
+.course-copy p:not(.detail-kicker) { max-width:24rem; margin:2rem 0; color:var(--muted); line-height:1.7; }
+.course-copy a { color:var(--race-green); font-size:.68rem; font-weight:600; letter-spacing:.1em; text-decoration:none; text-transform:uppercase; border-bottom:1px solid currentColor; }
+.course-map { margin:0; }
+.course-map img { display:block; width:100%; height:auto; border:1px solid var(--line); }
+.course-map figcaption { color:var(--muted); }
+
+.race-end-nav { border-top:1px solid var(--line); }
+.race-end-nav a { display:grid; grid-template-columns:1fr auto; align-items:center; padding:clamp(2.5rem,6vw,5rem) var(--page-pad); text-decoration:none; }
+.race-end-nav span { display:block; margin-bottom:.5rem; color:var(--muted); font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; }
+.race-end-nav strong { font-family:"Manrope",sans-serif; font-size:clamp(2rem,5vw,5rem); font-weight:500; letter-spacing:-.055em; }
+.race-end-nav b { grid-column:2; grid-row:1 / span 2; color:var(--race-purple); font-size:clamp(2rem,5vw,5rem); font-weight:400; transition:transform 180ms ease; }
+.race-end-nav a:hover b,.race-end-nav a:focus-visible b { transform:translateX(-.4rem); }
+.detail-footer { display:flex; align-items:center; justify-content:space-between; padding:2rem var(--page-pad); color:#fff; background:#171a16; }
+.detail-footer p { margin:0; color:#858a81; font-size:.65rem; letter-spacing:.09em; text-transform:uppercase; }
+
+@media (max-width:900px) {
+  .race-hero { align-items:flex-start; flex-direction:column; justify-content:flex-end; }
+  .hero-distance { align-self:flex-end; margin:0; }
+  .result-grid { grid-template-columns:repeat(2,1fr); }
+  .facts-list { grid-template-columns:repeat(2,1fr); }
+  .fact-card--compact { grid-column:1/-1; min-height:auto; border-top:1px solid rgba(255,255,255,.18); }
+  .fact-card--compact dl { display:grid; grid-template-columns:repeat(3,1fr); width:100%; margin:3rem 0 0; }
+  .fact-card--compact dl div { flex-direction:column; }
+  .course-section { grid-template-columns:1fr; }
+  .course-copy { position:static; }
+}
+
+@media (max-width:620px) {
+  .race-nav { padding-top:1.15rem; }
+  .race-hero { gap:2rem; }
+  .race-hero::before { top:4rem; right:-45vw; width:95vw; border-width:3rem; }
+  .race-hero h1 { font-size:clamp(4.7rem,24vw,7rem); }
+  .race-meta { flex-direction:column; gap:1.25rem; margin-top:2.75rem; }
+  .hero-distance strong { font-size:8rem; }
+  .hero-mark { display:none; }
+  .detail-heading { align-items:flex-start; flex-direction:column; }
+  .detail-heading--light { display:flex; }
+  .detail-heading--light>p:last-child { max-width:22rem; }
+  .result-grid { grid-template-columns:1fr; }
+  .result-stat { min-height:12rem; }
+  .facts-list { grid-template-columns:1fr; }
+  .fact-card { min-height:23rem; border-right:0; border-bottom:1px solid rgba(255,255,255,.18); }
+  .fact-card--compact { grid-column:auto; }
+  .fact-card--compact dl { grid-template-columns:1fr; margin-top:3rem; }
+  .proof-grid { grid-template-columns:1fr; }
+  .proof-grid figure:nth-child(2) { margin-top:1.5rem; }
+  .medal-story { grid-template-columns:1fr; }
+  .medal-story-image { aspect-ratio:1; }
+  .detail-footer p:first-of-type { display:none; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .back-link span,.race-end-nav b { transition:none; }
+}
