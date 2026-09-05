@@ -112,6 +112,20 @@ button { font:inherit; }
 .moment figcaption span { font-weight:600; }
 .moment figcaption b { margin-right:.65rem; color:var(--accent); font-size:.6rem; font-weight:600; }
 .moment figcaption time { flex:none; color:var(--muted); font-size:.65rem; text-transform:uppercase; }
+.motion-section { display:grid; grid-template-columns:minmax(15rem,.62fr) 1.38fr; gap:clamp(3rem,8vw,9rem); color:var(--paper); background:var(--ink); }
+.motion-heading { align-self:start; position:sticky; top:3rem; }
+.motion-heading h2 { margin:0; font-family:"Manrope",sans-serif; font-size:clamp(3.2rem,6.2vw,6.4rem); font-weight:500; letter-spacing:-.065em; line-height:.94; }
+.motion-heading>p:last-child { max-width:20rem; margin:2rem 0 0; color:#9fa198; font-size:.9rem; line-height:1.6; }
+.motion-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:clamp(1rem,2vw,1.75rem); align-items:start; }
+.motion-card { min-width:0; }
+.motion-card:nth-child(2) { margin-top:clamp(3rem,7vw,7rem); }
+.video-frame { position:relative; overflow:hidden; aspect-ratio:9/16; background:#080a08; }
+.video-frame video { display:block; width:100%; height:100%; object-fit:cover; }
+.motion-caption { display:flex; justify-content:space-between; gap:1rem; padding-top:1rem; border-top:1px solid rgba(242,240,233,.2); }
+.motion-caption div { display:flex; align-items:baseline; gap:.75rem; }
+.motion-caption span { color:var(--accent); font-size:.6rem; }
+.motion-caption h3 { margin:0; font-family:"Manrope",sans-serif; font-size:clamp(.9rem,1.3vw,1.1rem); font-weight:500; }
+.motion-caption p { flex:none; margin:.15rem 0 0; color:#777a72; font-size:.62rem; letter-spacing:.06em; text-transform:uppercase; }
 .site-footer { display:flex; align-items:center; justify-content:space-between; padding:2rem var(--page-pad); color:var(--paper); background:var(--ink); border-top:1px solid rgba(242,240,233,.14); }
 .site-footer p { margin:0; color:#777a72; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; }
 .reveal { opacity:0; transform:translateY(1.5rem); transition:opacity 650ms ease,transform 650ms cubic-bezier(.2,.7,.2,1); }
@@ -125,7 +139,7 @@ button { font:inherit; }
   .hero h1 { font-size:clamp(4.6rem,24vw,7.2rem); line-height:.78; }
   .hero-intro { font-size:.78rem; }
   .hero-count { display:none; }
-  .summary,.timeline-section,.goals-section { grid-template-columns:1fr; }
+  .summary,.timeline-section,.goals-section,.motion-section { grid-template-columns:1fr; }
   .summary { gap:3.75rem; }
   .stat { min-height:13rem; padding-top:1.5rem; }
   .summary-note { grid-column:1; margin-top:-1.5rem; }
@@ -138,6 +152,7 @@ button { font:inherit; }
   .race-details { padding-left:4.75rem; }
   .goal-card { min-height:30rem; }
   .moments-heading { align-items:flex-start; flex-direction:column; }
+  .motion-heading { position:static; }
   .site-footer p:nth-of-type(1) { display:none; }
 }
 
@@ -155,6 +170,8 @@ button { font:inherit; }
   .moment,.moment--wide,.moment--feature { grid-column:1/-1; }
   .moment--wide .moment-photo,.moment--feature .moment-photo { aspect-ratio:4/3; }
   .moment--portrait .moment-photo { aspect-ratio:3/4; }
+  .motion-grid { grid-template-columns:1fr; }
+  .motion-card:nth-child(2) { margin-top:2rem; }
 }
 
 @media (prefers-reduced-motion:reduce) {
