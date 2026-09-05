@@ -44,6 +44,18 @@ button { font:inherit; }
 .stat-label { margin:1.25rem 0 0; color:var(--muted); font-size:.82rem; }
 .stat-index { position:absolute; right:1rem; bottom:1rem; color:var(--muted); font-size:.65rem; }
 .summary-note { grid-column:2; max-width:36rem; margin:-2rem 0 0; color:var(--muted); font-size:clamp(1rem,1.6vw,1.3rem); line-height:1.65; }
+.medal-section { position:relative; display:grid; grid-template-columns:minmax(16rem,.8fr) 1.2fr; gap:clamp(3rem,9vw,10rem); align-items:center; overflow:hidden; background:#e5e2d8; }
+.medal-copy { position:relative; z-index:1; }
+.medal-copy h2 { margin:0; font-family:"Manrope",sans-serif; font-size:clamp(4rem,8vw,8rem); font-weight:500; letter-spacing:-.07em; line-height:.86; }
+.medal-intro { max-width:26rem; margin:2rem 0 0; color:var(--muted); font-size:clamp(.9rem,1.25vw,1.05rem); line-height:1.7; }
+.medal-total { display:flex; align-items:center; gap:1rem; margin:clamp(3rem,7vw,6rem) 0 0; }
+.medal-total strong { font-family:"Manrope",sans-serif; font-size:clamp(3.5rem,6vw,6rem); font-weight:500; letter-spacing:-.07em; line-height:.8; }
+.medal-total span { padding-left:1rem; color:var(--muted); font-size:.65rem; letter-spacing:.1em; line-height:1.45; text-transform:uppercase; border-left:1px solid var(--line); }
+.medal-visual { position:relative; display:grid; place-items:center; min-height:clamp(36rem,70vw,54rem); }
+.medal-visual img { position:relative; z-index:1; display:block; width:min(72%,25rem); max-height:49rem; object-fit:contain; filter:drop-shadow(0 2rem 2rem rgba(22,25,20,.2)); }
+.medal-ring { position:absolute; width:min(72%,34rem); aspect-ratio:1; border:1px solid rgba(255,84,46,.5); border-radius:50%; }
+.medal-ring::before,.medal-ring::after { content:""; position:absolute; inset:12%; border:1px solid rgba(22,25,20,.12); border-radius:50%; }
+.medal-ring::after { inset:28%; background:var(--accent); border:0; opacity:.12; }
 .timeline-section { display:grid; grid-template-columns:minmax(15rem,.62fr) 1.38fr; gap:clamp(3rem,8vw,9rem); color:var(--paper); background:var(--ink); }
 .timeline-heading { align-self:start; position:sticky; top:3rem; }
 .timeline-heading p:last-child { max-width:20rem; margin:2rem 0 0; color:#9fa198; font-size:.9rem; line-height:1.6; }
@@ -139,10 +151,12 @@ button { font:inherit; }
   .hero h1 { font-size:clamp(4.6rem,24vw,7.2rem); line-height:.78; }
   .hero-intro { font-size:.78rem; }
   .hero-count { display:none; }
-  .summary,.timeline-section,.goals-section,.motion-section { grid-template-columns:1fr; }
+  .summary,.medal-section,.timeline-section,.goals-section,.motion-section { grid-template-columns:1fr; }
   .summary { gap:3.75rem; }
   .stat { min-height:13rem; padding-top:1.5rem; }
   .summary-note { grid-column:1; margin-top:-1.5rem; }
+  .medal-visual { min-height:36rem; margin-top:-2rem; }
+  .medal-visual img { width:min(70vw,20rem); }
   .timeline-heading { position:static; }
   .race-toggle { grid-template-columns:4rem 1fr auto 1rem; gap:.75rem; padding:1.4rem 0; }
   .race-date strong { font-size:1.45rem; }
