@@ -26,6 +26,12 @@
   --race-green-light:#ff6b24;
   --race-purple:#ffe51b;
 }
+.race-page--pattaya {
+  --race-green:#102a4d;
+  --race-green-light:#ab342f;
+  --race-purple:#e8d5ba;
+}
+.race-page a:focus-visible { outline:2px solid currentColor; outline-offset:4px; }
 .race-nav { position:absolute; z-index:3; top:0; left:0; display:flex; align-items:center; justify-content:space-between; width:100%; padding:1.5rem var(--page-pad); color:#fff; }
 .back-link { display:flex; align-items:center; gap:.65rem; font-size:.68rem; font-weight:600; letter-spacing:.12em; text-decoration:none; text-transform:uppercase; }
 .back-link span { color:#d8b8d5; font-size:1rem; transition:transform 180ms ease; }
@@ -49,7 +55,8 @@
 .race-page--lazada .hero-distance span,.race-page--lazada .race-eyebrow,.race-page--lazada .back-link span,.race-page--lazada .proof-grid figcaption span,
 .race-page--atm .hero-distance span,.race-page--atm .race-eyebrow,.race-page--atm .back-link span,.race-page--atm .proof-grid figcaption span,
 .race-page--nurses .hero-distance span,.race-page--nurses .race-eyebrow,.race-page--nurses .back-link span,.race-page--nurses .proof-grid figcaption span,
-.race-page--park .race-hero h1 span,.race-page--lazada .race-hero h1 span,.race-page--atm .race-hero h1 span,.race-page--nurses .race-hero h1 span { color:var(--race-purple); }
+.race-page--pattaya .hero-distance span,.race-page--pattaya .race-eyebrow,.race-page--pattaya .back-link span,.race-page--pattaya .proof-grid figcaption span,
+.race-page--park .race-hero h1 span,.race-page--lazada .race-hero h1 span,.race-page--atm .race-hero h1 span,.race-page--nurses .race-hero h1 span,.race-page--pattaya .race-hero h1 span { color:var(--race-purple); }
 .hero-distance--decimal strong { font-size:clamp(6.5rem,15vw,14rem); }
 .hero-mark { position:absolute; top:13%; right:var(--page-pad); margin:0; color:rgba(255,255,255,.12); font-family:"Manrope",sans-serif; font-size:clamp(5rem,10vw,9rem); letter-spacing:-.08em; }
 

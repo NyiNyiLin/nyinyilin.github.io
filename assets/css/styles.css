@@ -172,8 +172,6 @@ button { font:inherit; }
 .shoe-races ul { margin:0; padding:0; list-style:none; }
 .shoe-races li+li { border-top:1px solid var(--line); }
 .shoe-races a { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.72rem 0; font-size:.72rem; font-weight:600; text-decoration:none; }
-.shoe-race-unlinked { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.72rem 0; font-size:.72rem; font-weight:600; }
-.shoe-race-unlinked span { margin-left:auto; color:var(--muted); font-size:.6rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; }
 .shoe-races a::after { content:"\203A"; color:var(--accent); font-size:1.2rem; font-weight:400; transition:transform 180ms ease; }
 .shoe-races a span { margin-left:auto; color:var(--muted); font-size:.6rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; }
 .shoe-races a:hover,.shoe-races a:focus-visible { color:var(--accent); }

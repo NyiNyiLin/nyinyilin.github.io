@@ -27,7 +27,7 @@ The visual direction is clean, editorial, and minimal: oversized typography, gen
 - `assets/js/main.js` — reveal animations, number counters, race accordions, and footer year.
 - `races/<race-slug>/index.html` — standalone race detail pages.
 - `assets/images/events/<race-slug>/` — certificate, result, medal, map, and race-kit media for one race.
-- `assets/images/highlights/` — five race-day photos shown on the homepage.
+- `assets/images/highlights/` — six race-day photos shown on the homepage.
 - `assets/images/hero/` — full-screen hero image and transparent medal-tower image.
 - `assets/images/video-posters/` and `assets/videos/` — homepage race videos.
 - `assets/images/strava/follow-qr.webp` — Strava follow QR code.
@@ -48,15 +48,14 @@ Keep this order unless the user explicitly requests a structural change:
 
 Current summary data:
 
-- Total race distance: 72.2 km.
-- Finish lines crossed: 5.
-- All-time runs: 223.
-- All-time distance: 1,260 km.
-- Last updated: 05 September 2026.
+- Total race distance: 93.3 km.
+- Finish lines crossed: 6.
+- All-time runs: 244.
+- All-time distance: 1,390 km.
+- Last updated: 12 October 2026.
 
 Current goals:
 
-- 27 September 2026 — Amazing Thailand Pattaya Marathon, 21.1 km.
 - 29 November 2026 — Amazing Thailand Marathon Bangkok, 42.2 km; first full marathon.
 
 ## Race pages and official data
@@ -70,6 +69,7 @@ Use the official certificate/result values below. They replace earlier rounded e
 | Lazada Run | `races/lazada-run/index.html` | 10 km | 1:12:11 | 7:13/km | `race-page--lazada` |
 | Amazing Thailand Marathon | `races/amazing-thailand-marathon/index.html` | 21.1 km | 2:51:07 | 8:06/km | `race-page--atm` |
 | Run for Nurses | `races/run-for-nurses/index.html` | 10 km | 1:07:19 | 6:44/km | `race-page--nurses` |
+| Amazing Thailand Pattaya Marathon | `races/amazing-thailand-pattaya-marathon/index.html` | 21.1 km | 3:02:48 | 8:39/km | `race-page--pattaya` |
 
 Every homepage race row must remain an accordion. Expanding it shows finish time and pace. A separate orange `View race detail` link opens the standalone page. Do not turn the whole timeline row into a link.
 
