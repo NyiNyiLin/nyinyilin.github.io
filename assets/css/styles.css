@@ -87,7 +87,7 @@ button { font:inherit; }
 .goals-section { display:grid; grid-template-columns:minmax(15rem,.62fr) 1.38fr; gap:clamp(3rem,8vw,9rem); background:var(--paper); }
 .goals-intro h2 { margin:0; font-family:"Manrope",sans-serif; font-size:clamp(3.2rem,6.2vw,6.4rem); font-weight:500; letter-spacing:-.065em; line-height:.94; }
 .goals-intro>p:last-child { max-width:20rem; margin:2rem 0 0; color:var(--muted); font-size:.9rem; line-height:1.6; }
-.goal-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+.goal-list { display:grid; grid-template-columns:1fr; gap:1rem; }
 .goal-card { display:flex; flex-direction:column; min-height:35rem; padding:clamp(1.35rem,2.5vw,2.25rem); background:#e5e2d8; border:1px solid var(--line); }
 .goal-card--marathon { color:var(--paper); background:var(--accent); border-color:var(--accent); }
 .goal-topline { display:flex; align-items:center; justify-content:space-between; font-size:.64rem; font-weight:600; letter-spacing:.13em; text-transform:uppercase; }
@@ -172,6 +172,8 @@ button { font:inherit; }
 .shoe-races ul { margin:0; padding:0; list-style:none; }
 .shoe-races li+li { border-top:1px solid var(--line); }
 .shoe-races a { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.72rem 0; font-size:.72rem; font-weight:600; text-decoration:none; }
+.shoe-race-unlinked { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.72rem 0; font-size:.72rem; font-weight:600; }
+.shoe-race-unlinked span { margin-left:auto; color:var(--muted); font-size:.6rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; }
 .shoe-races a::after { content:"\203A"; color:var(--accent); font-size:1.2rem; font-weight:400; transition:transform 180ms ease; }
 .shoe-races a span { margin-left:auto; color:var(--muted); font-size:.6rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; }
 .shoe-races a:hover,.shoe-races a:focus-visible { color:var(--accent); }
