@@ -52,7 +52,7 @@ button { font:inherit; }
 .medal-total strong { font-family:"Manrope",sans-serif; font-size:clamp(3.5rem,6vw,6rem); font-weight:500; letter-spacing:-.07em; line-height:.8; }
 .medal-total span { padding-left:1rem; color:var(--muted); font-size:.65rem; letter-spacing:.1em; line-height:1.45; text-transform:uppercase; border-left:1px solid var(--line); }
 .medal-visual { position:relative; display:grid; place-items:center; min-height:clamp(36rem,70vw,54rem); }
-.medal-visual img { position:relative; z-index:1; display:block; width:min(72%,25rem); max-height:49rem; object-fit:contain; filter:drop-shadow(0 2rem 2rem rgba(22,25,20,.2)); }
+.medal-visual img { position:relative; z-index:1; display:block; width:min(90%,30rem); max-height:49rem; object-fit:contain; filter:drop-shadow(0 2rem 2rem rgba(22,25,20,.2)); }
 .medal-ring { position:absolute; width:min(72%,34rem); aspect-ratio:1; border:1px solid rgba(255,84,46,.5); border-radius:50%; }
 .medal-ring::before,.medal-ring::after { content:""; position:absolute; inset:12%; border:1px solid rgba(22,25,20,.12); border-radius:50%; }
 .medal-ring::after { inset:28%; background:var(--accent); border:0; opacity:.12; }
@@ -214,7 +214,7 @@ button { font:inherit; }
   .stat { min-height:13rem; padding-top:1.5rem; }
   .summary-note { grid-column:1; margin-top:-1.5rem; }
   .medal-visual { min-height:36rem; margin-top:-2rem; }
-  .medal-visual img { width:min(70vw,20rem); }
+  .medal-visual img { width:min(110vw,30rem); max-width:none; }
   .timeline-heading { position:static; }
   .race-toggle { grid-template-columns:4rem 1fr auto 1rem; gap:.75rem; padding:1.4rem 0; }
   .race-date strong { font-size:1.45rem; }
